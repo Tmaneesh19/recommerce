@@ -26,7 +26,7 @@ const UserCart = () => {
                         {cartItems.map((item) => (
                             <div className='cart-section' key={item.id}>
                                 <div className="cart-img">
-                                    <img src={item.image} alt={item.product} />
+                                    <img src={process.env.PUBLIC_URL+item.image} alt={item.product} />
                                 </div>
                                 <div className="cart-details">
                                     <h3>{item.product}</h3>
